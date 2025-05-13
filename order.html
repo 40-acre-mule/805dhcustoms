@@ -6,11 +6,12 @@
   <title>Order - 805 DH Customs</title>
   <link rel="stylesheet" href="NINEYARDstyles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="icon" href="805.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
+
 </head>
 <body>
 
- <nav>
+<nav>
   <div class="logo">805 DH CUSTOMS</div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
@@ -32,10 +33,11 @@
     </li>
 
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="order.html">full custom</a></li>
+    <li><a href="order.html">Order</a></li>
     <li><a href="cart.html">Cart</a></li>
   </ul>
 </nav>
+
 
 
   <header class="hero">
@@ -47,18 +49,76 @@
   </header>
 
   <section class="form-section">
-    <form action="https://formspree.io/f/mkgrnynd" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Plate details (name, number, colors, etc.)" required></textarea>
-      <button type="submit" class="btn">Submit Order</button>
-    </form>
+   <form action="https://formspree.io/f/mkgrnynd" method="POST">
+  <h2>Plate Order</h2>
+  <label for="riderNamePlate">Rider Name:</label>
+  <input type="text" id="riderNamePlate" name="riderNamePlate">
+
+  <label for="riderNumber">Rider Number:</label>
+  <input type="number" id="riderNumber" name="riderNumber">
+
+  <label for="plateStyle">Plate Style:</label>
+  <select id="plateStyle" name="plateStyle">
+    <option>Standard</option>
+    <option>Custom Graphic</option>
+    <option>Sponsor Logo</option>
+  </select>
+
+  <label for="plateColors">Plate Colors (describe):</label>
+  <textarea id="plateColors" name="plateColors"></textarea>
+
+  <p>Plate Extras:</p>
+  <label><input type="checkbox" name="plateExtras" value="Add Rider Name"> Add Rider Name</label><br>
+  <label><input type="checkbox" name="plateExtras" value="Add Sponsor Logo"> Add Sponsor Logo</label><br>
+  <label><input type="checkbox" name="plateExtras" value="Matte Finish"> Matte Finish</label><br>
+  <label><input type="checkbox" name="plateExtras" value="Gloss Finish"> Gloss Finish</label>
+
+  <hr>
+
+  <h2>Helmet Order</h2>
+  <label for="riderNameHelmet">Rider Name:</label>
+  <input type="text" id="riderNameHelmet" name="riderNameHelmet">
+
+  <label for="helmetBrand">Helmet Brand:</label>
+  <input type="text" id="helmetBrand" name="helmetBrand">
+
+  <label for="helmetColor">Helmet Color:</label>
+  <input type="text" id="helmetColor" name="helmetColor">
+
+  <label for="designIdea">Design Idea / Theme:</label>
+  <textarea id="designIdea" name="designIdea"></textarea>
+
+  <p>Helmet Add-ons:</p>
+  <label><input type="checkbox" name="helmetExtras" value="Add Rider Name"> Add Rider Name</label><br>
+  <label><input type="checkbox" name="helmetExtras" value="Add Ribbon/Sticker"> Add Ribbon/Sticker</label><br>
+  <label><input type="checkbox" name="helmetExtras" value="Custom Text"> Custom Text</label>
+
+  <hr>
+
+  <h2>Contact Info</h2>
+  <label for="instaHandle">Instagram Handle (optional):</label>
+  <input type="text" id="instaHandle" name="instaHandle">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" name="phone">
+
+  <label for="address">Shipping Address:</label>
+  <textarea id="address" name="address" required></textarea>
+
+  <label for="notes">Special Requests:</label>
+  <textarea id="notes" name="notes"></textarea>
+
+  <button type="submit">Submit Order</button>
+</form>
+
   </section>
 
-<footer>
-  <p>pretty much no rights; 2025 805 DH Customs. Hand-crafted in Santa Barbara, CA</p>
-  <p><a href="rules.html" style="color: #fff;">Terms & Conditions</a></p>
-</footer>
+  <footer>
+    <p>pretty much no rights; 2025 805 DH Customs. Hand-crafted in Santa Barbara, CA</p>
+  </footer>
 
 </body>
 </html>
